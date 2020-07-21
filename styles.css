@@ -49,7 +49,7 @@ body, html{
   }
   
   .song{
-      padding: 100px;
+      /*padding: 100px;*/
       font-size: inherit;
       text-decoration: none;
       color: inherit;
@@ -92,7 +92,7 @@ body, html{
   .ptext .border{
     background-color: #f2b63f;
     color:#fff;
-    padding:20px;
+    /*padding:20px;*/
   }
 
   /*.border2{
@@ -106,16 +106,61 @@ body, html{
     background-color:transparent;
   }
   
-  @media(max-width:568px){
+@media(max-width:568px){
     .pimg1, .pimg2, .pimg3{
       background-attachment:scroll;
     }
+    .song-listing{
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      padding: 20px;
+    }
+    .song ,.section-light{
+      padding: 0px;
+      /*font-size: larger;*/
+    font-size: x-large;
+    }
+    
+    .cushion{
+      padding:4px;
+    }
   }
+
+@media(min-width:570px) and (max-width:960px){
+  .border{padding:3px;}
+}
+
+@media(min-width:960px){
+  .border{
+    padding: 20px;
+  }
+}
 
 .song-listing{
   display: flex;
   margin: 20px;
   padding: 20px;
-  
+}
+
+.motivated{
+  color: blanchedalmond; 
+  font-size: x-large;
 }
   
+.h2{
+  background-color: #f4f4f4;
+}
+
+.cushion{
+  padding:10px;
+}
+
+.grad-effect-sad{
+  background: radial-gradient(white,transparent);
+}
+
+.signature{
+  background: linear-gradient(to left,#FFC23F,transparent);
+  top:70%;
+}
